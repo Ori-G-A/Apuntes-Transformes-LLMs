@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers & LLMs Course</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-300 antialiased">
+
+    <!--Encabezado -->
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        <header class="mb-12 border-l-4 border-cyan-500 pl-6">
+            <h1 class="text-4xl font-black text-white tracking-tighter uppercase">
+                Transformers <span class="text-slate-500">&</span> LLMs
+            </h1>
+            <p class="text-cyan-500 font-mono text-sm mt-2">NOTAS DE CURSO | CME 295 </p>
+        </header>
+
+    <!--cambio de capítulo -->
+    <div class="flex justify-center gap-4 mb-8">
+    <button onclick="switchChapter('cap1', this)" class="tab-btn active-tab">Capítulo 1</button>
+    <button onclick="switchChapter('cap2', this)" class="tab-btn">Capítulo 2</button>
+    <button onclick="switchChapter('cap3', this)" class="tab-btn">Capítulo 3</button>
+    <button onclick="switchChapter('cap4', this)" class="tab-btn">Capítulo 4</button>
+    <button onclick="switchChapter('cap5', this)" class="tab-btn">Capítulo 5</button>
+    </div>
+
+    <!-- Buscador global -->
+    <div class="max-w-5xl mx-auto mb-12 relative">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <span class="text-slate-500">🔍</span>
+        </div>
+        <input 
+            type="text" 
+            id="globalSearch" 
+            placeholder="Buscar en este capítulo siglas o conceptos...(ej: NN, Adam, ReLU...)" 
+            class="w-full bg-slate-900/50 text-white pl-12 pr-4 py-4 rounded-2xl border border-slate-700 focus:ring-2 focus:ring-cyan-500/50 transition-all duration-300 outline-none"
+        >
+    </div>
+
+
+    <!--contenido del curso-->
+    <main id="course-content" class="space-y-6"></main>
+    </div>
+
+    <script src="data/capitulo1.js"></script>
+    <script src="data/capitulo2.js"></script>
+    <script src="data/capitulo3.js"></script>
+    <script src="data/capitulo4.js"></script>
+    <script src="data/capitulo5.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+/* Estructura del Acordeón */
+.accordion-item {
+    transition: all 0.3s ease;
+}
+
+/* Asegura que el contenido pueda crecer si hay acordeones dentro */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+/* Usamos un valor alto para permitir que los hijos se expandan */
+.active > .accordion-content {
+    max-height: 5000px; 
+}
+
+/* Rotación de flechas */
+.active > button .icon-arrow {
+    transform: rotate(180deg);
+    color: #06b6d4;
+}
+
+/* Cuando el padre tiene la clase .active, el grid-row pasa a 1fr (ocupa su espacio) */
+.accordion-item.active .accordion-content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 2rem;
+}
+
+/* Esto es vital: el hijo del grid debe tener min-height 0 */
+.accordion-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Estética de las tarjetas */
+.sigla-tag {
+    background: #164e63;
+    color: #22d3ee;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+/* Efecto de brillo para la caja de búsqueda */
+#globalSearch {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(51, 65, 85, 0.5); /* Borde pizarra suave */
+}
+
+#globalSearch:focus {
+    outline: none;
+    border-color: #06b6d4; /* Color cian */
+    background: rgba(15, 23, 42, 0.8);
+    /* El "brillo" se crea con box-shadow */
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4), 
+                0 0 5px rgba(6, 182, 212, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Esto hará que los \n se conviertan en saltos de línea reales */
+.concept-card p {
+    white-space: pre-line;
+}
+
+.tab-btn {
+    padding: 10px 25px;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.5);
+    color: #94a3b8;
+    border: 1px solid #334155;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.tab-btn:hover {
+    background: rgba(30, 41, 59, 0.8);
+    color: white;
+}
+
+.active-tab {
+    background: #06b6d4 !important;
+    color: white !important;
+    border-color: #06b6d4;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
