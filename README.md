@@ -1,6 +1,6 @@
 # 🤖 Deep Learning Notes: Transformers & LLMs
 
-Este repositorio contiene mis apuntes personales y un visualizador interactivo basados en el libro **"Super Study Guide: Transformers and Large Language Models"** de **Afshine Amidi** y **Shervine Amidi**.
+Este repositorio contiene mis apuntes personales y un visualizador interactivo basados en el libro **"Super Study Guide: Transformers and Large Language Models"** de **Afshine Amidi** y **Shervine Amidi** para el curso CME295 de Stanford.
 
 El objetivo de este proyecto es facilitar el estudio de conceptos complejos mediante una interfaz web minimalista, organizada y con funciones de búsqueda en tiempo real.
 
@@ -27,7 +27,7 @@ La guía se divide en 5 capítulos fundamentales:
 ### Créditos
 Este material es una **obra derivada** con fines educativos. Todos los conceptos teóricos, diagramas y la estructura original pertenecen a los autores:
 * **Autores:** Afshine Amidi y Shervine Amidi.
-* **Obra Original:** [Super Study Guide: Transformers and Large Language Models](https://super.stanford.edu/).
+* **Obra Original:** [Super Study Guide: Transformers and Large Language Models]([https://super.stanford.edu/](https://leanpub.com/transformers-large-language-models)).
 
 ### Licencia
 Este contenido de texto se distribuye bajo la licencia **Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**. 
